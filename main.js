@@ -1,13 +1,17 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Escribir un programa que evalúe la siguiente expresión:
-    // (a+7*c)/(b+2-a)+2*b 
-   
-    let a = Number(prompt("Ingrese el valor de 'a' ", ));
-    let b = Number(prompt("Ingrese el valor de 'b' ", ));
-    let c = Number(prompt("Ingrese el valor de 'c' ", ));
+//     Escribir un programa que calcule el área y el volumen de un cilindro:
+//  A = (2 * (PI * r˄2)) + ((2 * PI * r) * h)
+//  V = (PI * r2) * h
 
-    let Formula =((a+7*c)/(b+2-a)+2*b) ;
-    console.log(`%cFormula (${(a+7*c)} / ${(b+2-a)} + ${'2*b'})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-    console.log(`El volumen de la esfera es : "${Formula}"`);
+   
+    let valordeH = Number(prompt("Ingrese el valor de la altura ", ));
+    let valordeR = Number(prompt("Ingrese el valor del radio ", ));
+
+    let area =(2 * (Math.PI * valordeR**2)) + ((2 * Math.PI * valordeR) * valordeH);
+    let volumen =(Math.PI * valordeR*2) * valordeH ;
+    console.log(`%cFormula (${(2 * (Math.PI * valordeR**2))} + ${((2 * Math.PI * valordeR) * valordeH)})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.log(`%cFormula (${(Math.PI * valordeR*2)} * ${valordeH}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.log(`El volumen de la esfera es : "${area}"`);
+    console.log(`El volumen de la esfera es : "${volumen}"`);
 
 })
