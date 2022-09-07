@@ -1,17 +1,14 @@
 addEventListener("DOMContentLoaded", ()=>{
-//     Escribir un programa que calcule el área y el volumen de un cilindro:
-//  A = (2 * (PI * r˄2)) + ((2 * PI * r) * h)
-//  V = (PI * r2) * h
+    // . Escribir un algoritmo que permita obtener las raíces reales de la ecuación de segundo grado: A * x2 + b * x + c, siendo X un valor constante.
 
    
-    let valordeH = Number(prompt("Ingrese el valor de la altura ", ));
-    let valordeR = Number(prompt("Ingrese el valor del radio ", ));
+    let valorX = Number(prompt("Ingrese el valor de X ", ));
+    let valorA = Number(prompt("Ingrese el valor de A ", ));
+    let valorB = Number(prompt("Ingrese el valor de B ", ));
+    let valorC = Number(prompt("Ingrese el valor de C ", ));
 
-    let area =(2 * (Math.PI * valordeR**2)) + ((2 * Math.PI * valordeR) * valordeH);
-    let volumen =(Math.PI * valordeR*2) * valordeH ;
-    console.log(`%cFormula (${(2 * (Math.PI * valordeR**2))} + ${((2 * Math.PI * valordeR) * valordeH)})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-    console.log(`%cFormula (${(Math.PI * valordeR*2)} * ${valordeH}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-    console.log(`El volumen de la esfera es : "${area}"`);
-    console.log(`El volumen de la esfera es : "${volumen}"`);
+    let Formula =(valorA * valorX*2 + valorB * valorX + valorC) ;
+    console.log(`%cFormula (${'A * x2 + b * x + c'} )`, `background-color: black; color: aliceblue;border: blue dashed 3px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius: 5px;`);
+    console.log(`El volumen de la esfera es : "${Formula}"`);
 
 })
