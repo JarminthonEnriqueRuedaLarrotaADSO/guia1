@@ -1,13 +1,14 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Escribir un programa que calcule el volumen de un elipsoide
-    // V = (4/3) * PI * a * b *c
-   
-    let valorA = Number(prompt("Ingrese el valor de A ", ));
-    let valorB = Number(prompt("Ingrese el valor de B ", ));
-    let valorC = Number(prompt("Ingrese el valor de C ", ));
+    // . Programa que muestre el pago de una llamada telefónica sabiendo que cada minuto cuesta $355
+    // pesos y un IVA de 20%.
 
-    let Formula =(4/3) * Math.PI * valorA * valorB * valorC ;
-    console.log(`%cFormula (${'(4/3) * PI * a * b *c'} )`, `background-color: black; color: aliceblue;border: blue dashed 3px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius: 5px;`);
-    console.log(`El volumen de la elipsoide es : "${Formula}"`);
+    let tiempoLL = Number(prompt("Ingrese el tiempo de la llamada ", ));
+    let precioLL=365
+    let iva=precioLL*0.20 ;
+    let Formula =precioLL*tiempoLL ;
+    let total= Formula+iva
+
+    console.log(`%cFormula (${'cada minuto cuesta $355 pesos y un iva de 20%'} )`, `background-color: black; color: aliceblue;border: blue dashed 3px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius: 5px;`);
+    console.log(`El costo de la llamada es : "${total}"`);
 
 })
