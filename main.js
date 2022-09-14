@@ -1,19 +1,14 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 16. Elaborar un algoritmo para calcular el promedio final de la materia de algoritmos. Dicha calificación se
-    // compone de los siguientes porcentajes:
-    // • 55% del promedio final de sus calificaciones de los tres(3) parciales.
-    // • 30% de la calificación examen final y
-    // • 15% de la calificación trabajo final.
-
-    let nota1 = Number(prompt("Ingrese la nota del parcial1:  ", ));
-    let nota2 = Number(prompt("Ingrese la nota del parcial2: ", ));
-    let nota3 = Number(prompt("Ingrese la nota del parcial3: ", ));
-    let nota4 = Number(prompt("Ingrese la nota del examen final: ", ));
-    let nota5 = Number(prompt("Ingrese la nota del trabajo final: ", ));
-    let sumPromedio=(nota1+nota2+nota3)/3*0.55
-    let examf= nota4*0.30
-    let trabajof= nota5*0.15
-    let sumafinal= sumPromedio+examf+trabajof
-    console.log(`%cFormula (${'sumar el porcentaje de las notas'} )`, `background-color: black; color: aliceblue;border: blue dashed 3px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius: 5px;`);
-    console.log(`Su nota final es:   "${sumafinal}"`);
+    // 17. Dado el valor que un cliente paga por un producto, calcular qué valor corresponde al costo total del
+    // producto y cuánto es el valor del IVA. Considerando que el porcentaje del IVA puede variar en el
+    // tiempo y de un producto a otro, este dato se lee por teclado.
+    let producto = Number(prompt("Ingrese el costo del producto:  ", ));
+    let Iva = Number(prompt("Ingrese el valor del IVA en numero entero : ", ));
+    let convertirIva= Iva/100
+    let smf= producto*convertirIva
+    let sumafinal=producto+smf
+    console.log(`%cFormula (${'sumar el IVA al valor del producto: '} )`, `background-color: black; color: aliceblue;border: blue dashed 3px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius: 5px;`);
+    console.log(`El valor original del producto es:   "${producto}"`);
+    console.log(`El IVA es:   "${convertirIva}"`);
+    console.log(`El valor final del producto con el IVA es:   "${sumafinal}"`);
 })
