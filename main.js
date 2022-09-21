@@ -1,12 +1,15 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 28 .Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. Considere que
-    // se cobra por m2 y realice el código que representen el algoritmo que le permita ir generando
-    // presupuestos para cada cliente.
-    let m_cdrado = Number(prompt('introduce metros cuadrados para pintar ',))
-    let presupuesto_mcuadrado = Number(prompt('introduce valor metro cuadrado segun material ', )) 
-    let solucion = (m_cdrado*presupuesto_mcuadrado)
+    // 29. Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo,
+    // pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron. Realice el código
+    // que representen el algoritmo para solucionar este problema.
+    // Al final debe entregar el nombre de la persona entrevistada en mayúscula sostenida y minunscula
+    // sostenida y la edad del entrevistado.
+    let nombreTrabj = prompt('ingrese el nombre del trabajador: ')
+    let añoNacimiento = Number(prompt('ingrese el año en el que nacio:  ',))
+    let añoActual = Number(prompt('ingrese el año en el que se encuentra:  ', )) 
+    let solucion = (añoActual-añoNacimiento)
     
-    console.log(`%cFormula (${"solucion = (m_cdrado*presupuesto_mcuadrado)"}} )`, `background-color: black; color: aliceblue;border: blue dashed 3px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius: 5px;`);
-    console.log(`El total de dinero a pagar por metro cuadrado pintado es:"${solucion}"`);
+    console.log(`%cFormula (${"solucion=(año actual-Edad del trabajador)"}} )`, `background-color: black; color: aliceblue;border: blue dashed 3px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius: 5px;`);
+    console.log(`El nombre del trabajador es "${nombreTrabj}" y su edad es : ${solucion}`);
 
 })
