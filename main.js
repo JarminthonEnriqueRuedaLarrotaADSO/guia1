@@ -1,19 +1,14 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 23.• Generar el algoritmo que dé como resultado el tiempo estimado para el llenado de un
-    // depósito.
-    // • Q=V/t, siendo Q (caudal), V (volumen) y t (tiempo).
-    // • Volumen = PI *(radio^2)* H (altura del depósito)
-    // • El tiempo se encuentra en minutos.
-    // • Normalmente se mide el volumen en litros y el tiempo en segundos.
-    let radio = Number(prompt("ingrese el valor del radio: ", ))
-    let alturaH = Number(prompt("ingrese el valor de la altura: ", ))
-    let hallarVol = Math.PI * Math.pow(radio,2) * alturaH
-    let tiempo = Number(prompt("Ingrese el valor del tiempo (en minutos ):  ", ));
-    let tiempoSeg = tiempo*60
-    let Q = hallarVol/tiempoSeg
+// 24. Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por
+// $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le
+// sobran $91000. ¿cuánto dinero tenía?
+    let sobrante = 91000
+    let JuegosdeLlaves = 11500*5
+    let Bomba = 1168000
+    let cajaPerno = 87000*3
+    let sumaCompra = JuegosdeLlaves+Bomba+cajaPerno+sobrante
 
-
-    console.log(`%cFormula (${"Q=V/T"}} )`, `background-color: black; color: aliceblue;border: blue dashed 3px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius: 5px;`);
-    console.log(`El teimpo estimado de llenado del deposito es de:  "${Q}"`);
+    console.log(`%cFormula (${"se calcula el precio de la compra y se le suma el restante inicial.."}} )`, `background-color: black; color: aliceblue;border: blue dashed 3px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius: 5px;`);
+    console.log(`El dinero que traia es:   "${sumaCompra}"`);
     
 })
